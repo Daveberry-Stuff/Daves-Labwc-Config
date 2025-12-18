@@ -1,6 +1,6 @@
 ## Crutial to add.
-[ ] Update: Notification Daemon.
+- [ ] Update: Notification Daemon.
 
 ## Optional.
-[ ] Chore: Organized files.
-[ ] Update: Auto updater.
+- [ ] Chore: Organized files.
+- [ ] Update: Auto updater.
