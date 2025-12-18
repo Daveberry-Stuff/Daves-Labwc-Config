@@ -1,0 +1,34 @@
+/* General styling for the bar itself */
+#waybar {
+    background-color: rgba(30, 30, 30, 0.95);
+    color: #ffffff;
+    border-bottom: 2px solid rgba(100, 100, 100, 0.5);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+
+/* Styling for all modules */
+#waybar > * {
+    padding: 0 10px;
+    margin: 0 3px;
+}
+
+/* Styling for specific modules */
+#clock, #battery, #pulseaudio {
+    border-radius: 5px;
+}
+
+/* Style for the workspace buttons */
+#workspaces button {
+    padding: 0 5px;
+    color: #aaaaaa;
+    margin: 0 2px;
+}
+
+/* Style for the active workspace */
+#workspaces button.active {
+    color: #8be9fd; /* A light blue accent */
+    font-weight: bold;
+}
+
+

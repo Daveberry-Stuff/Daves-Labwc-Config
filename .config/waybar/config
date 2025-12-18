@@ -1,0 +1,47 @@
+{
+    // --- Bar Position ---
+    "position": "top", // Change to "bottom" if you want a bottom bar
+    "layer": "top",    // Puts the bar on top of other windows
+
+    // --- Modules to display (from left to right) ---
+    "modules-left": ["ext/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["battery", "tray"],
+
+    // --- Module Configuration Details ---
+
+    "ext/workspaces": { // <-- And changed the module definition here
+        "format": "{icon}",
+        "all-outputs": true,
+        "format-icons": {
+            "default": "•",
+            "active": "●",
+            "urgent": "!"
+        },
+        "sort-by-number": true,
+        "on-click": "activate", // Recommended for making buttons clickable
+
+        "on-scroll-up": "wtype -M win -M shift -k Left",
+        "on-scroll-down": "wtype -M win -M shift -k Right"
+    },
+
+    "clock": {
+        "format": "{:%a %b %d %I:%M %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{:%A}</small></tt>",
+        "interval": 60
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "states": {
+            "warning": 20,
+            "critical": 10
+        }
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 5
+    }
+}

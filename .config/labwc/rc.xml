@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<labwc_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <core>
+    <decoration>server</decoration>
+    <gap>15</gap>
+  </core>
+
+  <placement>
+    <policy>Smart</policy>
+    <center>yes</center>
+  </placement>
+
+  <theme>
+    <name>Clearlooks</name>
+    <cornerRadius>0</cornerRadius>
+  </theme>
+
+  <desktops>
+    <number>5</number>
+    <names>
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
+      <name>5</name>
+    </names>
+  </desktops>
+
+  <keyboard>
+    <default /> <keybind key="W-w">
+      <action name="Close"/>
+    </keybind>
+
+    <keybind key="W-1"><action name="GoToDesktop" to="1" /></keybind>
+    <keybind key="W-2"><action name="GoToDesktop" to="2" /></keybind>
+    <keybind key="W-3"><action name="GoToDesktop" to="3" /></keybind>
+    <keybind key="W-4"><action name="GoToDesktop" to="4" /></keybind>
+    <keybind key="W-5"><action name="GoToDesktop" to="5" /></keybind>
+
+    <keybind key="W-S-Left">
+      <action name="GoToDesktop"><to>left</to><wrap>true</wrap></action>
+    </keybind>
+    <keybind key="W-S-Right">
+      <action name="GoToDesktop"><to>right</to><wrap>true</wrap></action>
+    </keybind>
+
+    <keybind key="A-Tab">
+      <action name="NextWindow">
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <keybind key="A-S-Tab">
+      <action name="PreviousWindow">
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+        </finalactions>
+      </action>
+    </keybind>
+
+    <keybind key="W-e">
+      <action name="Execute">
+        <command>kitty --class="floating_menu" --title="Ranger" -o initial_window_width=720 -o initial_window_height=1280 -e ranger</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-S-e">
+      <action name="Execute">
+        <command>nautilus</command>
+      </action>
+    </keybind>
+
+    <keybind key="C-S-Escape">
+      <action name="Execute">
+	<command>kitty --class="floating_menu" --title="Htop" -o initial_window_width=720 -o initial_window_height=1280 -e htop</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-Return">
+      <action name="Execute">
+        <command>kitty</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-S-s">
+      <action name="Execute">
+        <command>sh -c 'grim - | $HOME/.local/bin/satty --filename - --fullscreen --output-filename ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png'</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-C-S-s">
+      <action name="Execute">
+        <command>~/.config/rofi/powermenu.sh</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-d">
+      <action name="Execute">
+        <command>rofi -show drun</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-v">
+      <action name="Execute">
+        <command>~/.config/rofi/vpnmenu.sh</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-s">
+      <action name="Execute">
+        <command>kitty --class="floating_menu" --title="System Controls" -o initial_window_width=500 -o initial_window_height=300 -e python3 ~/scripts/syscontrol.py</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-C-r">
+      <action name="Execute">
+        <command>labwc --reconfigure</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-Up">
+      <action name="SnapToEdge" direction="center"/>
+    </keybind>
+  </keyboard>
+
+  <mouse>
+    <default />
+    <context name="Client">
+      <mousebind button="W-Middle" action="Click">
+        <action name="SnapToEdge" direction="center"/>
+      </mousebind>
+    </context>
+
+    <context name="Frame">
+      <mousebind button="W-Middle" action="Click">
+        <action name="SnapToEdge" direction="center"/>
+      </mousebind>
+    </context>
+
+    <context name="TitleBar">
+      <mousebind button="Middle" action="Click">
+        <action name="SnapToEdge" direction="center"/>
+      </mousebind>
+    </context>
+  </mouse>
+
+  <windowRules>
+    <windowRule identifier="floating_menu">
+      <positioning>center</positioning>
+      <maximized>no</maximized>
+      <fullscreen>no</fullscreen>
+      <layer>top</layer> <skipTaskbar>yes</skipTaskbar>
+      <skipPager>yes</skipPager>
+    </windowRule>
+  </windowRules>
+
+  <libinput>
+    <device type="pointer">
+      <pointerSpeed>0.25</pointerSpeed>
+      <accelProfile>flat</accelProfile>
+      <accelSpeed>0</accelSpeed>
+    </device>
+  </libinput>
+</labwc_config>
