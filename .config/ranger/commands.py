@@ -6,7 +6,6 @@ class pinta(Command):
             target = self.rest(1)
         else:
             target = self.fm.thisfile.path
-
         self.fm.run(f"flatpak run com.github.PintaProject.Pinta '{target}'", flags='f')
 
 class vlc(Command):
@@ -15,17 +14,7 @@ class vlc(Command):
             target = self.rest(1)
         else:
             target = self.fm.thisfile.path
-            
         self.fm.run(f"flatpak run org.videolan.VLC '{target}'", flags='f')
-
-class imgview(Command):
-    def execute(self):
-        if self.rest(1):
-            target = self.rest(1)
-        else:
-            target = self.fm.thisfile.path
-            
-        self.fm.run(f"flatpak run org.gnome.Loupe '{target}'", flags='f')
 
 class yank(Command):
     def execute(self):
@@ -33,9 +22,26 @@ class yank(Command):
             target = self.rest(1)
         else:
             target = self.fm.thisfile.path
-
         self.fm.run(f"wl-copy < '{target}'", flags='f')
 
-class terminal(Command):
+class kitty(Command):
     def execute(self):
         self.fm.run("kitty &")
+
+# If you're a visual studio code user.
+class vsc(Command):
+    def execute(self):
+        if self.rest(1):
+            target = self.rest(1)
+        else:
+            target = self.fm.thisfile.path
+        self.fm.run(f"flatpak run com.visualstudio.code '{target}'", flags='f')
+
+# If you're a nvim user.
+class nvim(Command):
+    def execute(self):
+        if self.rest(1):
+            target = self.rest(1)
+        else:
+            target = self.fm.thisfile.path
+        self.fm.run(f"kitty -e nvim '{target}'", flags='f')
