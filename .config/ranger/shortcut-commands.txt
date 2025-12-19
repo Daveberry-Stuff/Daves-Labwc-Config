@@ -1,0 +1,37 @@
+THIS IS NOT A CONFIGURATION FILE.
+
+If this is your first time using ranger, think of it like Vim but for exploring files. This uses Vim keybinds with commands. Don't feel lost, please try to learn vim keys.
+
+== Pinta ==
+Execute: pinta (%f/file.png)
+Example: pinta %f
+Description: This is the application where you view all your photos and edit your photos. The first argument is the file you wanted to view/edit.
+
+== VLC ==
+Execute: vlc (%f/file.mp4)
+Example: vlc %f
+Description: This is the application where you watch all your videos. The first argument is the file you wanted to watch.
+
+== Yank ==
+Execute: yank (%f/file.txt)
+Example: yank %f
+Description: This copies the file you selected in the first argument to the wayland clipboard.
+
+== Spread ==
+Execute: spread (pythonScript.py)
+Example: spread myPythonScript.py
+Description: This pastes the file you had in your wayland clipboard. The first argument is your preferred file name choice.
+
+== Kitty ==
+Execute & Example: kitty
+Description: Your default terminal for ranger.
+
+== Visual Studio Code ==
+Execute: vsc (%f/file.py/project)
+Example: vsc myPythonProject
+Description: If you're a Visual Studio Code user, then this is what you run in ranger.
+
+== Neovim ==
+Execute: neovim (%f/file.py/project)
+Example: neovim myPythonProject
+Description: If you're a Neovim user, then this is what you run in ranger.

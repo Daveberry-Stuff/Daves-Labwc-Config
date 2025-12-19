@@ -1,0 +1,17 @@
+THIS IS NOT A CONFIGURATION FILE.
+
+== General ==
+Closing Apps = Super + W
+Maximize = Middle Click Top Bar, Super + Middle Click, Maximize Button.
+Switch desktop 1 to desktop 5 = Super + {1,2,3,4,5}
+Switch windows = Alt + Tab, Alt + Shift + Tab
+Reload LabWC = Super + Ctrl + R
+
+== Windows ==
+Open Ranger (File Explorer) = Super + E
+Open Nautilus (Backup File Explorer) = Super + Shift + E
+Open Htop (Task Manager/System Monitor) = Ctrl + Shift + Esc
+Open Kitty (Terminal) = Super + Enter
+Open Rofi App lists = Super + D
+Open Rofi Power lists = Super + Shift + Ctrl + S
+Open System Controls = Super + S

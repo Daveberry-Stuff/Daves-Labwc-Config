@@ -1,6 +1,6 @@
 ## Crutial.
 - [ ] Added: Notification Daemon.
-- [ ] Added: Rofi/Python/Shell scripts showing keybinds.
+- [x] Added: Rofi/Python/Shell scripts showing keybinds.
 
 ## Optional.
 - [ ] Chore: Organized files.
