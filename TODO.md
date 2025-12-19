@@ -1,6 +1,7 @@
 ## Crutial.
 - [ ] Added: Notification Daemon.
 - [x] Added: Rofi/Python/Shell scripts showing keybinds.
+- [ ] Added: Switching wallpaper flawlessly.
 
 ## Optional.
 - [ ] Chore: Organized files.
