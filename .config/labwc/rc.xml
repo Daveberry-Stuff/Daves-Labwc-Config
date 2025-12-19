@@ -122,7 +122,7 @@
 
     <keybind key="W-h">
       <action name="Execute">
-        <command>kitty -e ~/scritps/keybinds.sh</command>
+        <command>kitty -e ~/scripts/keybinds.sh</command>
       </action>
     </keybind>
   </keyboard>
