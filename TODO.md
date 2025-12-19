@@ -8,4 +8,4 @@
 - [ ] Update: Music controller in waybar.
 - [ ] Update: Music changer in waybar.
 - [ ] Update: Brightness changer in waybar.
-- [ ] Replace: OpenVPN and the Rofi Vpn Menu with Proton VPN GTK.
+- [x] Replace: OpenVPN and the Rofi Vpn Menu with Proton VPN GTK.

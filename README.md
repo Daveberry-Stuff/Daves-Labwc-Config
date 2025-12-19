@@ -9,7 +9,6 @@ This used to be very minimal, focusing on gaming. But now, it's usable for daily
 - `syscontrol.py` -  Controls your brightness and your volume.
   - `ddc-helper.sh` - Handles chaning your brightness.
 - `powermenu.sh` - Shutsdown, Reboot, Log out.
-- `vpnmenu.sh` - For connecting to ProtonVPN using OpenVPN.
 
 ### 💻 | Packages:
 - `labwc` - The Desktop Environment itself.
@@ -17,20 +16,22 @@ This used to be very minimal, focusing on gaming. But now, it's usable for daily
 - `ddcutil` - The library that controls the brightness.
 - `pactl` - Changing volume.
 - `python3` - For the Made-Scripts.
-- `openvpn` - For connecting to VPNs
 - `htop` - System Monitor.
 - `ranger` - For managing files, and the file explorer.
 - `nautilus` - Backup for ranger if you don't want to use the TUI.
 - `rofi` - App launcher, VPN conneting, Power Menu.
 - `swaybg` - Background for Wayland compositors.
 - `waybar` - Top bar for wayland compositors.
-- `vlc` - The default media player.
+- `org.videolan.VLC` - The default media player.
 - `grim` & `satty` - Screenshoting tools
-- `visualstudiocode` - The default code editor.
+- `com.visualstudio.code` - The default code editor.
 - `neovim` - Your second default code editor.
-- `pinta` - The default image viewer/editor.
+- `com.github.PintaProject.Pinta` - The default image viewer/editor.
 - `wl-clipboard` - Wayland compositors clipboard.
 - `libinput` - Input Library.
+
+### 💻 | Optional Packages:
+- `com.protonvpn.www` - Connecting VPNs.
 
 (probably more I forgot...)
 
@@ -42,7 +43,7 @@ Please use the package manager you use for your distribution. I've only tested t
 
 Once all dependencies have been finished downloading, run these commands in your terminal to finish off everything:
 ```bash
-git clone https://github.com/Daveberry-Stuff/MiniBox
+git clone https://github.com/Daveberry-Stuff/Daves-Labwc-Config
 cd MiniBox
 rm .git
 chmod +x install.sh
@@ -52,7 +53,7 @@ bash install.sh
 And, it's going to automatically install and back up everything for you.
 
 ### ⚠️ | Caution
-Some of the packages that are listed **ARE FROM FLATHUB**. Please install `pinta`, `vlc`, and `visualstudiocode` from flathub. If you wish, you can make them to use outside of flatpak.
+Some of the packages that are listed **ARE FROM FLATHUB**. Please install `com.github.PintaProject.Pinta`, `org.videolan.VLC`, `com.visualstudio.code`, and `com.protonvpn.www` from flathub. If you wish, you can make them to use outside of flatpak.
 
 Adding permission for `/etc/sudoers.d/` might not work perfectly. Please check the file by using `sudo cat /etc/sudoers.d/daves-labwc-config` and check if there's anything in there. If not, please add these lines yourself.
 ```text

@@ -104,12 +104,6 @@
       </action>
     </keybind>
 
-    <keybind key="W-v">
-      <action name="Execute">
-        <command>~/.config/rofi/vpnmenu.sh</command>
-      </action>
-    </keybind>
-
     <keybind key="W-s">
       <action name="Execute">
         <command>kitty --class="floating_menu" --title="System Controls" -o initial_window_width=500 -o initial_window_height=300 -e python3 ~/scripts/syscontrol.py</command>
