@@ -4,8 +4,8 @@
 
 ## Optional.
 - [ ] Chore: Organized files.
-- [ ] Update: Auto updater.
-- [ ] Update: Music controller in waybar.
-- [ ] Update: Music changer in waybar.
-- [ ] Update: Brightness changer in waybar.
+- [ ] Added: Auto updater.
+- [ ] Added: Music controller in waybar.
+- [ ] Added: Music changer in waybar.
+- [ ] Added: Brightness changer in waybar.
 - [x] Replace: OpenVPN and the Rofi Vpn Menu with Proton VPN GTK.
