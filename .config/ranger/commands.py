@@ -23,6 +23,18 @@ class yank(Command):
         else:
             target = self.fm.thisfile.path
         self.fm.run(f"wl-copy < '{target}'", flags='f')
+class spread(Command):
+    def execute(self):
+        if not self.arg(1):
+            self.fm.notify("spread: missing filename", bad=True)
+            return
+
+        filename = self.rest(1)
+
+        self.fm.run(
+            ["sh", "-c", f"wl-paste > {filename}"],
+            flags="w"
+        )
 
 class kitty(Command):
     def execute(self):

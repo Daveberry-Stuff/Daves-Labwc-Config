@@ -1,6 +1,6 @@
 ## Crutial.
-- [ ] Update: Notification Daemon.
-- [ ] Update: Rofi/Python/Shell scripts showing keybinds.
+- [ ] Added: Notification Daemon.
+- [ ] Added: Rofi/Python/Shell scripts showing keybinds.
 
 ## Optional.
 - [ ] Chore: Organized files.
@@ -9,3 +9,4 @@
 - [ ] Added: Music changer in waybar.
 - [ ] Added: Brightness changer in waybar.
 - [x] Replace: OpenVPN and the Rofi Vpn Menu with Proton VPN GTK.
+- [x] Added: Wayland paste.
