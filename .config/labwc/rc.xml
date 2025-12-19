@@ -119,6 +119,12 @@
     <keybind key="W-Up">
       <action name="SnapToEdge" direction="center"/>
     </keybind>
+
+    <keybind key="W-h">
+      <action name="Execute">
+        <command>~/scritps/keybinds.sh</command>
+      </action>
+    </keybind>
   </keyboard>
 
   <mouse>
