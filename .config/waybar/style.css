@@ -1,4 +1,3 @@
-/* General styling for the bar itself */
 #waybar {
     background-color: rgba(30, 30, 30, 0.95);
     color: #ffffff;
@@ -7,28 +6,33 @@
     font-size: 14px;
 }
 
-/* Styling for all modules */
 #waybar > * {
     padding: 0 10px;
     margin: 0 3px;
 }
 
-/* Styling for specific modules */
 #clock, #battery, #pulseaudio {
     border-radius: 5px;
 }
 
-/* Style for the workspace buttons */
 #workspaces button {
     padding: 0 5px;
     color: #aaaaaa;
     margin: 0 2px;
 }
 
-/* Style for the active workspace */
 #workspaces button.active {
     color: #8be9fd; /* A light blue accent */
     font-weight: bold;
 }
 
+#custom-cava {
+    font-family: "0xProto Nerd Font";
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 0 10px;
+}
 
+#clock, #custom-music {
+    margin-right: 10px;
+}
