@@ -29,6 +29,8 @@ This used to be very minimal, focusing on gaming. But now, it's usable for daily
 - `com.github.PintaProject.Pinta` - The default image viewer/editor.
 - `wl-clipboard` - Wayland compositors clipboard.
 - `libinput` - Input Library.
+- `playerctl` - Controls your media for waybar.
+- `cava` - Audio visualizer for waybar.
 
 ### 💻 | Optional Packages:
 - `com.protonvpn.www` - Connecting VPNs.
